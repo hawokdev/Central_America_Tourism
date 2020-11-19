@@ -6,3 +6,100 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
 }
+.header
+{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+}
+.header--title
+{
+    text-align: center;
+}
+.header--nav
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 80%;
+    column-gap: 30px;
+    justify-content: center;
+}
+.main
+{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 500px 500px 650px;
+}
+.main--banner
+{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 60%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.main--banner h1
+{
+    text-align: right;
+    padding-right: 100px;
+}
+.main--about
+{
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 80%;
+    column-gap: 10%;
+}
+.main--about-who
+{
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+.main--about-what
+{
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.main--review
+{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: auto 80%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.main--review h1
+{
+
+}
+.main--review-paises
+{
+    height: 100%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+}
+.footer
+{
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+}
