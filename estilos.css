@@ -188,6 +188,7 @@ body
     text-decoration: none;
     color: black;
     padding: 3px 0;
+    transition: .5s;
 }
     .header--nav-inicio:hover
     {
@@ -200,7 +201,7 @@ body
     text-decoration: none;
     color: black;
     padding: 3px 0;
-
+    transition: .5s;
 }
     .header--nav-about:hover
     {
@@ -213,7 +214,7 @@ body
     text-decoration: none;
     color: black;
     padding: 3px 0;
-
+    transition: .5s;
 }
     .header--nav-paises:hover
     {
@@ -226,7 +227,7 @@ body
     text-decoration: none;
     color: black;
     padding: 3px 0;
-
+    transition: .5s;
 }
     .header--nav-idiomas:hover
     {
@@ -418,18 +419,34 @@ body
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
+
 }
 .paises--container-guatemala
 {
     grid-column-start: 1;
     grid-row-start: 1;
+    transition: .2s;
 }
 .paises--container-guatemala2
 {
     grid-column-start: 1;
     grid-row-start: 1;
+    transition: .2s;
+    position: absolute;
+    opacity: 0;
+    transform: scale(1);
+    transform-origin: 110% 50%;
 }
-
+    .container-guatemala:hover .paises--container-guatemala
+    {
+        opacity: 0;
+    }
+    .container-guatemala:hover .paises--container-guatemala2
+    {
+        opacity: 1;
+        
+        transform: scale(1.3);
+    }
 .container-belice
 {
     width: 100%;
@@ -444,13 +461,30 @@ body
 {
     grid-column-start: 1;
     grid-row-start: 1;
+    transition: .2s;
+
 }
+
 .paises--container-belice2
 {
     grid-column-start: 1;
     grid-row-start: 1;
+    transition: .2s;
+    position: absolute;
+    opacity: 0;
+    transform: scale(1);
+    transform-origin: -10% 100%;
 }
-
+    .container-belice:hover .paises--container-belice
+    {
+        opacity: 0;
+    }
+    .container-belice:hover .paises--container-belice2
+    {
+        opacity: 1;
+        
+        transform: scale(1.3);
+    }
 
 .container-honduras
 {
@@ -466,13 +500,32 @@ body
 {
     grid-column-start: 1;
     grid-row-start: 1;
+    transition: .2s;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 1;
 }
 .paises--container-honduras2
 {
     grid-column-start: 1;
     grid-row-start: 1;
+    transition: .2s;
+    border-radius: 50px;
+    position: absolute;
+    opacity: 0;
+    transform: scale(1);
+    transform-origin: 0% 100%;
 }
-
+    .container-honduras:hover .paises--container-honduras
+    {
+        opacity: 0;
+    }
+    .container-honduras:hover .paises--container-honduras2
+    {
+        opacity: 1;
+        z-index: 3;
+        transform: scale(1.3);
+    }
 .container-elsalvador
 {
     width: 100%;
@@ -487,13 +540,29 @@ body
 {
     grid-column-start: 1;
     grid-row-start: 1;
+    transition: .2s;
+
 }
 .paises--container-elsalvador2
 {
     grid-column-start: 1;
     grid-row-start: 1;
+    transition: .2s;
+    position: absolute;
+    opacity: 0;
+    transform: scale(1);
+    transform-origin: 70% -40%;
 }
-
+    .container-elsalvador:hover .paises--container-elsalvador
+    {
+        opacity: 0;
+    }
+    .container-elsalvador:hover .paises--container-elsalvador2
+    {
+        opacity: 1;
+        z-index: 3;
+        transform: scale(1.4);
+    }
 .container-nicaragua
 {
     width: 100%;
@@ -508,13 +577,33 @@ body
 {
     grid-column-start: 1;
     grid-row-start: 1;
+    border-radius: 50px;
+   
+    transition: .2s;
+    position: absolute;
+    /* z-index: 1; */
 }
 .paises--container-nicaragua2
 {
     grid-column-start: 1;
     grid-row-start: 1;
+    border-radius: 50px;
+  
+    transition: .2s;
+    position: absolute;
+    opacity: 0;
+    transform: scale(1);
+    transform-origin: -30% 50%;
 }
-
+    .container-nicaragua:hover .paises--container-nicaragua
+    {
+        opacity: 0;
+    }
+    .container-nicaragua:hover .paises--container-nicaragua2
+    {
+        opacity: 1;
+        transform: scale(1.3);
+    }
 .container-costarica
 {
     width: 100%;
@@ -529,13 +618,28 @@ body
 {
     grid-column-start: 1;
     grid-row-start: 1;
+    transition: .2s;
 }
 .paises--container-costarica2
 {
     grid-column-start: 1;
     grid-row-start: 1;
+    transition: .2s;
+    position: absolute;
+    opacity: 0;
+    transform: scale(1);
+    transform-origin: 110% 10%;
 }
-
+    .container-costarica:hover .paises--container-costarica
+    {
+        opacity: 0;
+    }
+    .container-costarica:hover .paises--container-costarica2
+    {
+        opacity: 1;
+        
+        transform: scale(1.3);
+    }
 .container-panama
 {
     width: 100%;
@@ -550,16 +654,61 @@ body
 {
     grid-column-start: 1;
     grid-row-start: 1;
+    transition: .2s;
 }
 .paises--container-panama2
 {
     grid-column-start: 1;
     grid-row-start: 1;
+    transition: .2s;
+    position: absolute;
+    opacity: 0;
+    transform: scale(1);
+    transform-origin: 0% 50%;
 } 
-
+    .container-panama:hover .paises--container-panama
+    {
+        opacity: 0;
+    }
+    .container-panama:hover .paises--container-panama2
+    {
+        opacity: 1;
+        
+        transform: scale(1.3);
+    }
 .footer
 {
     width: 100%;
     height: 150px;
-    border: 1px solid black;
+    background-color: rgb(0, 0, 141);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+}
+.footer--social
+{
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(3, 5%);
+    grid-template-rows: 100%;
+}
+.footer--social a
+{
+    text-decoration: none;
+    color: white;
+}
+.footer--terminos
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-weight: 100;
 }

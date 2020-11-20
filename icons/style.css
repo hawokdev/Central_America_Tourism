@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?dgt3dv');
-  src:  url('fonts/icomoon.eot?dgt3dv#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?dgt3dv') format('truetype'),
-    url('fonts/icomoon.woff?dgt3dv') format('woff'),
-    url('fonts/icomoon.svg?dgt3dv#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?8gpjd8');
+  src:  url('fonts/icomoon.eot?8gpjd8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?8gpjd8') format('truetype'),
+    url('fonts/icomoon.woff?8gpjd8') format('woff'),
+    url('fonts/icomoon.svg?8gpjd8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -39,6 +39,9 @@
 }
 .icon-basketball1:before {
   content: "\e90a";
+}
+.icon-pinterest1:before {
+  content: "\e923";
 }
 .icon-language:before {
   content: "\e919";
@@ -174,6 +177,12 @@
 }
 .icon-instagram:before {
   content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-pinterest:before {
+  content: "\ead1";
 }
 .icon-menu:before {
   content: "\e900";
