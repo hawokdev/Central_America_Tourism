@@ -14,7 +14,7 @@ body
 .header
 {
     width: 100%;
-    height: 100px;
+    height: 110px;
     /* border: 1px solid black; */
     display: grid;
     grid-template-columns: 100%;
@@ -23,7 +23,7 @@ body
 .header--title
 {
     display: grid;
-    grid-template-columns: 60% 10px 10px 10px;
+    grid-template-columns: 62% 10px 10px 10px;
     grid-template-rows: 100%;
     /* justify-content: center; */
     align-items: center;
@@ -39,6 +39,10 @@ body
 {
     font-size: 50px;
     font-weight: 500;
+}
+.header--title-description i
+{
+    font-size: 30px;
 }
 .cuadro1
 {
@@ -166,7 +170,7 @@ body
 .header--nav
 {
     display: grid;
-    grid-template-columns: 10% 10% 10% 10%;
+    grid-template-columns: 11% 11% 11% 11%;
     grid-template-rows: 100%;
     /* column-gap: 70px; */
     justify-content: center;
@@ -176,6 +180,10 @@ body
     text-align: center;
     font-weight: 400;
 }
+.header--nav span
+{
+    padding-right: 10px;
+}
 .header--nav-inicio
 {
     text-decoration: none;
@@ -184,7 +192,7 @@ body
 }
     .header--nav-inicio:hover
     {
-        background-color: #eeeaea;
+        background-color: #e2dddd;
         border-radius: 25px;
         padding: 3px 0;
     }
@@ -197,7 +205,7 @@ body
 }
     .header--nav-about:hover
     {
-        background-color: #eeeaea;
+        background-color: #e2dddd;
         border-radius: 25px;
         padding: 3px 0;
     }
@@ -210,7 +218,7 @@ body
 }
     .header--nav-paises:hover
     {
-        background-color: #eeeaea;
+        background-color: #e2dddd;
         border-radius: 25px;
         padding: 3px 0;
     }
@@ -223,10 +231,13 @@ body
 }
     .header--nav-idiomas:hover
     {
-        background-color: #eeeaea;
+        background-color: #e2dddd;
         border-radius: 25px;
         padding: 3px 0;
     }
+
+
+
 .main
 {
     width: 100%;
@@ -239,22 +250,41 @@ body
 }
 .main--banner
 {
-    border: 1px solid black;
-    background-image: url();
+    /* border: 1px solid black; */
+    background-color: black ;
+    background-image: url(./backblack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 35% 40%;
     grid-template-rows: 60%;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
+.main--banner-linea
+{
+    border-right: white 3px solid;
+}
+
 .main--banner h1
 {
     font-family: 'coolveticaregular';
-    font-size: 50px;
+    font-size: 60px;
     text-align: right;
-    padding-right: 100px;
+    padding-right: 50px;
+    color: white;
 }
+.main--banner p
+{
+    font-family: 'coolveticaregular';
+    font-size: 30px;
+    text-align: left;
+    padding-left: 50px;
+    color: white;
+}
+
+
 .main--about
 {
     border: 1px solid black;
@@ -263,7 +293,7 @@ body
     align-content: center;
     align-items: center;
     grid-template-columns: 30% 30%;
-    grid-template-rows: 80%;
+    grid-template-rows: 70%;
     column-gap: 10%;
 }
 .main--about-who
