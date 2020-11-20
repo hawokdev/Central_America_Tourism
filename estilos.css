@@ -251,7 +251,7 @@ body
 {
     /* border: 1px solid black; */
     background-color: black ;
-    background-image: url(./backblack.jpg);
+    background-image: url(./imgs/backblack.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
@@ -359,6 +359,8 @@ body
     font-weight: 300;
     text-align: justify;
 }
+
+
 .main--review
 {
     /* border: 1px solid black; */
@@ -391,8 +393,170 @@ body
     border: 1px solid black;
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
 }
+.paises--container
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: repeat(500, 1px);
+    grid-template-rows: repeat(500, 1px);
+}
+
+
+.container-guatemala
+{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-row-start: 50;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+.paises--container-guatemala
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.paises--container-guatemala2
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.container-belice
+{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 83;
+    grid-row-start: 31;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+.paises--container-belice
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.paises--container-belice2
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+
+.container-honduras
+{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 78;
+    grid-row-start: 110;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+.paises--container-honduras
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.paises--container-honduras2
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.container-elsalvador
+{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 57;
+    grid-row-start: 160;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+.paises--container-elsalvador
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.paises--container-elsalvador2
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.container-nicaragua
+{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 126;
+    grid-row-start: 143;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+.paises--container-nicaragua
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.paises--container-nicaragua2
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.container-costarica
+{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 169;
+    grid-row-start: 263;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+.paises--container-costarica
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.paises--container-costarica2
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.container-panama
+{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 253;
+    grid-row-start: 311;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+.paises--container-panama
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.paises--container-panama2
+{
+    grid-column-start: 1;
+    grid-row-start: 1;
+} 
+
 .footer
 {
     width: 100%;
