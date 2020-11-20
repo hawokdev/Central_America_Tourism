@@ -1,3 +1,8 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
 .container
 {   
     height: 100%;
@@ -9,24 +14,219 @@
 .header
 {
     width: 100%;
-    height: 50px;
-    border: 1px solid black;
+    height: 100px;
+    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 65% 30%;
 }
 .header--title
 {
-    text-align: center;
+    display: grid;
+    grid-template-columns: 60% 10px 10px 10px;
+    grid-template-rows: 100%;
+    /* justify-content: center; */
+    align-items: center;
 }
+.header--title-description
+{
+    font-family: 'kind_and_rich_-_personal_usRg';
+    
+    text-align: right;
+    padding-right: 20px;
+}
+.header--title-description h1
+{
+    font-size: 50px;
+    font-weight: 500;
+}
+.cuadro1
+{
+    width: 20px;
+    height: 20px;
+    background-color: #241CC4;
+    animation-name: rotarcuadro1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform: rotate(45deg);
+    box-shadow: 2px 2px 18px #888888;
+}
+        @keyframes rotarcuadro1
+        {
+            0%
+            {
+                transform: rotate(0deg);
+            }
+            25%
+            {
+                
+                transform: rotate(45deg);
+            }
+            50%
+            {
+                background-color: #ffffff ;
+                transform: rotate(90deg);
+            }
+            75%
+            {
+                
+                transform: rotate(135deg);
+            }
+            100%
+            {
+                background-color: #FC0412;
+                transform: rotate(180deg);
+            }
+        }
+.cuadro2
+{
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    animation-name: rotarcuadro2;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.15s;
+    /* animation-direction: alternate; */
+    transform: rotate(45deg);
+    box-shadow: 2px 2px 18px #888888;
+}
+        @keyframes rotarcuadro2
+        {
+            0%
+            {
+                transform: rotate(0deg);
+            }
+            25%
+            {
+                
+                transform: rotate(45deg);
+            }
+            50%
+            {
+                background-color: #FC0412 ;
+                transform: rotate(90deg);
+            }
+            75%
+            {
+                
+                transform: rotate(135deg);
+            }
+            100%
+            {
+                background-color: #241CC4;
+                transform: rotate(180deg);
+            }
+        }
+.cuadro3
+{
+    width: 20px;
+    height: 20px;
+    background-color: #FC0412;
+    animation-name: rotarcuadro3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.25s;
+    /* animation-direction: alternate; */
+    transform: rotate(45deg);
+    box-shadow: 2px 2px 18px #888888;
+
+}
+        @keyframes rotarcuadro3
+        {
+            0%
+            {
+                transform: rotate(0deg);
+            }
+            25%
+            {
+                
+                transform: rotate(45deg);
+            }
+            50%
+            {
+                background-color: #241CC4 ;
+                transform: rotate(90deg);
+            }
+            75%
+            {
+                
+                transform: rotate(135deg);
+            }
+            100%
+            {
+                background-color: #ffffff;
+                transform: rotate(180deg);
+            }
+        }
 .header--nav
 {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 80%;
-    column-gap: 30px;
+    grid-template-columns: 10% 10% 10% 10%;
+    grid-template-rows: 100%;
+    /* column-gap: 70px; */
     justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
 }
+.header--nav-inicio
+{
+    text-decoration: none;
+    color: black;
+    padding: 3px 0;
+}
+    .header--nav-inicio:hover
+    {
+        background-color: #eeeaea;
+        border-radius: 25px;
+        padding: 3px 0;
+    }
+.header--nav-about
+{
+    text-decoration: none;
+    color: black;
+    padding: 3px 0;
+
+}
+    .header--nav-about:hover
+    {
+        background-color: #eeeaea;
+        border-radius: 25px;
+        padding: 3px 0;
+    }
+.header--nav-paises
+{
+    text-decoration: none;
+    color: black;
+    padding: 3px 0;
+
+}
+    .header--nav-paises:hover
+    {
+        background-color: #eeeaea;
+        border-radius: 25px;
+        padding: 3px 0;
+    }
+.header--nav-idiomas
+{
+    text-decoration: none;
+    color: black;
+    padding: 3px 0;
+
+}
+    .header--nav-idiomas:hover
+    {
+        background-color: #eeeaea;
+        border-radius: 25px;
+        padding: 3px 0;
+    }
 .main
 {
     width: 100%;
@@ -35,10 +235,12 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 500px 500px 650px;
+
 }
 .main--banner
 {
     border: 1px solid black;
+    background-image: url();
     display: grid;
     grid-template-columns: 40% 40%;
     grid-template-rows: 60%;
@@ -48,6 +250,8 @@
 }
 .main--banner h1
 {
+    font-family: 'coolveticaregular';
+    font-size: 50px;
     text-align: right;
     padding-right: 100px;
 }
