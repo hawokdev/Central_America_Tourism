@@ -11,6 +11,36 @@ body
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
 }
+
+
+.botton--menu--container
+{
+    margin-top: 700px;
+    height: 100%;
+    width: 70px;
+    position: absolute;
+    right: 20px;
+}
+.botton--menu--back
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 141);
+    position: sticky;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+}
+.botton--menu--back span
+{
+    
+    font-size: 40px;
+    color: white;
+}
+
 .header
 {
     width: 100%;
@@ -211,30 +241,125 @@ body
     }
 .header--nav-paises
 {
-    text-decoration: none;
     color: black;
     padding: 3px 0;
     transition: .5s;
 }
+.header--nav-paises a
+{
+    text-decoration: none;
+    color: black;
+}
+
     .header--nav-paises:hover
     {
         background-color: #e2dddd;
         border-radius: 25px;
         padding: 3px 0;
     }
+    
+.nav--paises-lista
+{
+    margin-top: 3px;
+    opacity: 0;
+    transition: 1s;
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    justify-content: center;
+    width: 11%;
+    font-weight: 100;
+}
+.nav--paises-lista ul
+{
+    list-style: none;
+    padding: 0;
+    width: 90%;
+}
+.nav--paises-lista li a
+{
+    text-align: center;
+    transition: .3s;
+}
+.nav--paises-lista li:hover
+{
+    background-color: #dad8d8;
+    border-radius: 25px;
+}
+.nav--paises-lista li 
+{
+    margin-bottom: 3px;
+    width: 100%;
+}
+    .header--nav-paises:hover .nav--paises-lista
+        {
+            opacity: 1;
+            display: flex;
+        }
+
+
 .header--nav-idiomas
 {
-    text-decoration: none;
     color: black;
     padding: 3px 0;
     transition: .5s;
 }
+.header--nav-idiomas a
+{
+    text-decoration: none;
+    color: black;
+}
+
     .header--nav-idiomas:hover
     {
         background-color: #e2dddd;
         border-radius: 25px;
         padding: 3px 0;
     }
+
+.nav--idiomas-lista
+{
+    margin-top: 3px;
+    opacity: 0;
+    transition: 1s;
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    justify-content: center;
+    width: 11%;
+    font-weight: 100;
+}
+.nav--idiomas-lista ul
+{
+    list-style: none;
+    padding: 0;
+    width: 90%;
+}
+.nav--idiomas-lista li a
+{
+    text-align: center;
+    transition: .3s;
+}
+.nav--idiomas-lista li:hover
+{
+    background-color: #dad8d8;
+    border-radius: 25px;
+}
+.nav--idiomas-lista li 
+{
+    margin-bottom: 3px;
+    width: 100%;
+}
+    .header--nav-idiomas:hover .nav--idiomas-lista
+        {
+            opacity: 1;
+            display: flex;
+        }
+
 
 
 
@@ -391,7 +516,7 @@ body
 {
     width: 100%;
     height: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 60% 40%;
@@ -409,6 +534,64 @@ body
     grid-template-rows: repeat(500, 1px);
 }
 
+
+.review--container-CA
+{
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    background-color: #e2e0e0;
+    border-radius: 25px;
+    right: 193px;
+    opacity: 1;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 10% 30% 50%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.review--container-CA-title
+{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 65% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.review--container-CA-title h3
+{
+    font-size: 50px;
+    font-weight: 300;
+    /* color: white; */
+    font-family: 'kind_and_rich_-_personal_usRg' ;
+    text-align: right;
+}
+.review--container-CA-title span
+{
+    font-size: 24px;
+    text-align: left;
+    padding-left: 10px;
+}
+.review--CA-img
+{
+    
+    width: 100%;
+    height: 100%;
+    background-image: url("./imgs/paisaje1.jpg");
+    background-size: cover;
+    border-radius: 25px;
+}
+.review--container-CA p
+{
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-align: justify;
+}
 
 .container-guatemala
 {
@@ -437,6 +620,60 @@ body
     transform: scale(1);
     transform-origin: 110% 50%;
 }
+.review--container-guatemala    
+{
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    background-color: #edecec;
+    /* background-color: #f05454; */
+    border-radius: 25px;
+    right: 193px;
+    opacity: 0;
+    transition: .5s;
+    display: none;
+}
+.review--container-guatemala-title
+{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.review--container-guatemala-title h3
+{
+    font-size: 50px;
+    font-weight: 300;
+    /* color: white; */
+    font-family: 'kind_and_rich_-_personal_usRg' ;
+    text-align: right;
+}
+.review--container-guatemala-title img
+{
+    margin-right: auto;
+    width: 50px;
+    text-align: left;
+    padding-left: 10px;
+}
+.review--guatemala-img
+{
+    
+    width: 100%;
+    height: 100%;
+    background-image: url("./imgs/paisajes/paisaje-guatemala.jpg");
+    background-size: cover;
+    border-radius: 25px;
+}
+.review--container-guatemala p
+{
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-align: justify;
+}
     .container-guatemala:hover .paises--container-guatemala
     {
         opacity: 0;
@@ -447,6 +684,18 @@ body
         
         transform: scale(1.3);
     }
+    .container-guatemala:hover .review--container-guatemala
+    {
+        opacity: 1;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 10% 30% 50%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+
 .container-belice
 {
     width: 100%;
@@ -475,6 +724,61 @@ body
     transform: scale(1);
     transform-origin: -10% 100%;
 }
+.review--container-belice    
+{
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    background-color: #edecec;
+    /* background-color: #f05454; */
+    margin-top: 20px;
+    border-radius: 25px;
+    right: 193px;
+    opacity: 0;
+    transition: .5s;
+    display: none;
+}
+.review--container-belice-title
+{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.review--container-belice-title h3
+{
+    font-size: 50px;
+    font-weight: 300;
+    /* color: white; */
+    font-family: 'kind_and_rich_-_personal_usRg' ;
+    text-align: right;
+}
+.review--container-belice-title img
+{
+    margin-right: auto;
+    width: 50px;
+    text-align: left;
+    padding-left: 10px;
+}
+.review--belice-img
+{
+    
+    width: 100%;
+    height: 100%;
+    background-image: url("./imgs/paisajes/paisaje-belice.jpg");
+    background-size: cover;
+    border-radius: 25px;
+}
+.review--container-belice p
+{
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-align: justify;
+}
     .container-belice:hover .paises--container-belice
     {
         opacity: 0;
@@ -484,6 +788,16 @@ body
         opacity: 1;
         
         transform: scale(1.3);
+    }
+    .container-belice:hover .review--container-belice
+    {
+        opacity: 1;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 10% 30% 50%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
 .container-honduras
@@ -516,6 +830,61 @@ body
     transform: scale(1);
     transform-origin: 0% 100%;
 }
+.review--container-honduras    
+{
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    background-color: #edecec;
+    /* background-color: #f05454; */
+    border-radius: 25px;
+    margin-top: -59px;
+    right: 193px;
+    opacity: 0;
+    transition: .5s;
+    display: none;
+}
+.review--container-honduras-title
+{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.review--container-honduras-title h3
+{
+    font-size: 50px;
+    font-weight: 300;
+    /* color: white; */
+    font-family: 'kind_and_rich_-_personal_usRg' ;
+    text-align: right;
+}
+.review--container-honduras-title img
+{
+    margin-right: auto;
+    width: 50px;
+    text-align: left;
+    padding-left: 10px;
+}
+.review--honduras-img
+{
+    
+    width: 100%;
+    height: 100%;
+    background-image: url("./imgs/paisajes/paisaje-honduras.jpg");
+    background-size: cover;
+    border-radius: 25px;
+}
+.review--container-honduras p
+{
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-align: justify;
+}
     .container-honduras:hover .paises--container-honduras
     {
         opacity: 0;
@@ -525,6 +894,16 @@ body
         opacity: 1;
         z-index: 3;
         transform: scale(1.3);
+    }
+    .container-honduras:hover .review--container-honduras
+    {
+        opacity: 1;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 10% 30% 50%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 .container-elsalvador
 {
@@ -553,6 +932,61 @@ body
     transform: scale(1);
     transform-origin: 70% -40%;
 }
+.review--container-elsalvador    
+{
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    background-color: #edecec;
+    /* background-color: #f05454; */
+    margin-top: -109px;
+    border-radius: 25px;
+    right: 193px;
+    opacity: 0;
+    transition: .5s;
+    display: none;
+}
+.review--container-elsalvador-title
+{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.review--container-elsalvador-title h3
+{
+    font-size: 50px;
+    font-weight: 300;
+    /* color: white; */
+    font-family: 'kind_and_rich_-_personal_usRg' ;
+    text-align: right;
+}
+.review--container-elsalvador-title img
+{
+    margin-right: auto;
+    width: 50px;
+    text-align: left;
+    padding-left: 10px;
+}
+.review--elsalvador-img
+{
+    
+    width: 100%;
+    height: 100%;
+    background-image: url("./imgs/paisajes/paisaje-elsalvador.jpg");
+    background-size: cover;
+    border-radius: 25px;
+}
+.review--container-elsalvador p
+{
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-align: justify;
+}
     .container-elsalvador:hover .paises--container-elsalvador
     {
         opacity: 0;
@@ -562,6 +996,16 @@ body
         opacity: 1;
         z-index: 3;
         transform: scale(1.4);
+    }
+    .container-elsalvador:hover .review--container-elsalvador
+    {
+        opacity: 1;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 10% 30% 50%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 .container-nicaragua
 {
@@ -595,6 +1039,61 @@ body
     transform: scale(1);
     transform-origin: -30% 50%;
 }
+.review--container-nicaragua    
+{
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    background-color: #edecec;
+    /* background-color: #f05454; */
+    border-radius: 25px;
+    margin-top: -92px;
+    right: 193px;
+    opacity: 0;
+    transition: .5s;
+    display: none;
+}
+.review--container-nicaragua-title
+{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.review--container-nicaragua-title h3
+{
+    font-size: 50px;
+    font-weight: 300;
+    /* color: white; */
+    font-family: 'kind_and_rich_-_personal_usRg' ;
+    text-align: right;
+}
+.review--container-nicaragua-title img
+{
+    margin-right: auto;
+    width: 50px;
+    text-align: left;
+    padding-left: 10px;
+}
+.review--nicaragua-img
+{
+    
+    width: 100%;
+    height: 100%;
+    background-image: url("./imgs/paisajes/paisaje-nicaragua.jpg");
+    background-size: cover;
+    border-radius: 25px;
+}
+.review--container-nicaragua p
+{
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-align: justify;
+}
     .container-nicaragua:hover .paises--container-nicaragua
     {
         opacity: 0;
@@ -603,6 +1102,16 @@ body
     {
         opacity: 1;
         transform: scale(1.3);
+    }
+    .container-nicaragua:hover .review--container-nicaragua
+    {
+        opacity: 1;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 10% 30% 50%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 .container-costarica
 {
@@ -630,6 +1139,61 @@ body
     transform: scale(1);
     transform-origin: 110% 10%;
 }
+.review--container-costarica    
+{
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    background-color: #edecec;
+    /* background-color: #f05454; */
+    border-radius: 25px;
+    margin-top: -212px;
+    right: 193px;
+    opacity: 0;
+    transition: .5s;
+    display: none;
+}
+.review--container-costarica-title
+{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.review--container-costarica-title h3
+{
+    font-size: 50px;
+    font-weight: 300;
+    /* color: white; */
+    font-family: 'kind_and_rich_-_personal_usRg' ;
+    text-align: right;
+}
+.review--container-costarica-title img
+{
+    margin-right: auto;
+    width: 50px;
+    text-align: left;
+    padding-left: 10px;
+}
+.review--costarica-img
+{
+    
+    width: 100%;
+    height: 100%;
+    background-image: url("./imgs/paisajes/paisaje-costarica.jpg");
+    background-size: cover;
+    border-radius: 25px;
+}
+.review--container-costarica p
+{
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-align: justify;
+}
     .container-costarica:hover .paises--container-costarica
     {
         opacity: 0;
@@ -639,6 +1203,16 @@ body
         opacity: 1;
         
         transform: scale(1.3);
+    }
+    .container-costarica:hover .review--container-costarica
+    {
+        opacity: 1;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 10% 30% 50%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 .container-panama
 {
@@ -666,6 +1240,61 @@ body
     transform: scale(1);
     transform-origin: 0% 50%;
 } 
+.review--container-panama    
+{
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    background-color: #edecec;
+    /* background-color: #f05454; */
+    border-radius: 25px;
+    margin-top: -260px;
+    right: 193px;
+    opacity: 0;
+    transition: .5s;
+    display: none;
+}
+.review--container-panama-title
+{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.review--container-panama-title h3
+{
+    font-size: 50px;
+    font-weight: 300;
+    /* color: white; */
+    font-family: 'kind_and_rich_-_personal_usRg' ;
+    text-align: right;
+}
+.review--container-panama-title img
+{
+    margin-right: auto;
+    width: 50px;
+    text-align: left;
+    padding-left: 10px;
+}
+.review--panama-img
+{
+    
+    width: 100%;
+    height: 100%;
+    background-image: url("./imgs/paisajes/paisaje-panama.jpg");
+    background-size: cover;
+    border-radius: 25px;
+}
+.review--container-panama p
+{
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-align: justify;
+}
     .container-panama:hover .paises--container-panama
     {
         opacity: 0;
@@ -676,6 +1305,55 @@ body
         
         transform: scale(1.3);
     }
+    .container-panama:hover .review--container-panama
+    {
+        opacity: 1;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 10% 30% 50%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+.return-botton
+{
+    text-decoration: none;
+    
+    width: 60px;
+    height: 70px;
+} 
+.return-botton--container
+{
+    position: absolute;
+    right: 30px;
+    margin-top: 30%;
+    width: 70px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    background-color: #edecec;
+}
+.return-botton--container span
+{
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+.return-botton--container p
+{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: black;
+    text-align: center;
+}
+
+
 .footer
 {
     width: 100%;
@@ -711,4 +1389,9 @@ body
     justify-content: center;
     font-family: 'Roboto';
     font-weight: 100;
+}
+
+.anclas
+{
+    position: absolute;
 }

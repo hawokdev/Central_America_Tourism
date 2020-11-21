@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?8gpjd8');
-  src:  url('fonts/icomoon.eot?8gpjd8#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?8gpjd8') format('truetype'),
-    url('fonts/icomoon.woff?8gpjd8') format('woff'),
-    url('fonts/icomoon.svg?8gpjd8#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?92d8si');
+  src:  url('fonts/icomoon.eot?92d8si#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?92d8si') format('truetype'),
+    url('fonts/icomoon.woff?92d8si') format('woff'),
+    url('fonts/icomoon.svg?92d8si#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -40,6 +40,12 @@
 .icon-basketball1:before {
   content: "\e90a";
 }
+.icon-chevron-up:before {
+  content: "\e927";
+}
+.icon-chevron-down:before {
+  content: "\e925";
+}
 .icon-pinterest1:before {
   content: "\e923";
 }
@@ -57,6 +63,12 @@
 }
 .icon-paper-plane:before {
   content: "\e912";
+}
+.icon-cheveron-up:before {
+  content: "\e926";
+}
+.icon-cheveron-down:before {
+  content: "\e924";
 }
 .icon-user-group:before {
   content: "\e920";
@@ -105,6 +117,12 @@
 }
 .icon-menu4:before {
   content: "\e907";
+}
+.icon-chevrons-up:before {
+  content: "\e928";
+}
+.icon-chevron-up1:before {
+  content: "\e929";
 }
 .icon-menu3:before {
   content: "\e906";
