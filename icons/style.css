@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?92d8si');
-  src:  url('fonts/icomoon.eot?92d8si#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?92d8si') format('truetype'),
-    url('fonts/icomoon.woff?92d8si') format('woff'),
-    url('fonts/icomoon.svg?92d8si#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?cmm65g');
+  src:  url('fonts/icomoon.eot?cmm65g#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?cmm65g') format('truetype'),
+    url('fonts/icomoon.woff?cmm65g') format('woff'),
+    url('fonts/icomoon.svg?cmm65g#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -79,6 +79,9 @@
 .icon-menu2:before {
   content: "\e905";
 }
+.icon-map-signs:before {
+  content: "\e92a";
+}
 .icon-group1:before {
   content: "\e921";
 }
@@ -93,6 +96,9 @@
 }
 .icon-futbol-o:before {
   content: "\e90b";
+}
+.icon-beach_access:before {
+  content: "\e92b";
 }
 .icon-help_center:before {
   content: "\e91b";
@@ -162,6 +168,9 @@
 }
 .icon-trophy:before {
   content: "\e99e";
+}
+.icon-leaf:before {
+  content: "\e9a4";
 }
 .icon-fire:before {
   content: "\e9a9";

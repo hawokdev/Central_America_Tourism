@@ -1,0 +1,479 @@
+body
+{
+    padding: 0;
+    margin: 0;  
+}
+.container
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+.header
+{
+    width: 100%;
+    height: 110px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 65% 30%;
+    /* border: 1px solid black; */
+}
+.header--title
+{
+    width: 100%;
+    height: 100%;
+    font-family: 'kind_and_rich_-_personal_usRg'; 
+    font-weight: 100;
+    font-size: 45px;
+    display: grid;
+    grid-template-columns: 64% 31%;
+    align-items: center;
+}
+.header--title img
+{
+    width: 50px;
+    padding-left: 10px;
+}
+.header--title div
+{
+    text-align: right;
+}
+.header--nav
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+.header--nav-inicio
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    padding: 3px 30px;
+    transition: .3s;
+}
+.header--nav-inicio:hover
+    {
+        background-color: #e2dddd;
+        border-radius: 25px;
+    }
+.header--nav-inicio span, .header--nav-paises span, .header--nav-rutas span, .header--nav-naturaleza span,.header--nav-playas span 
+{
+    padding-right: 5px;
+}
+.header--nav-paises
+{
+    color: black;
+    padding: 3px 30px;
+    transition: .5s;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+}
+.header--nav-paises a
+{
+    text-decoration: none;
+    color: black;
+}
+
+    .header--nav-paises:hover
+    {
+        background-color: #e2dddd;
+        border-radius: 25px;
+    }
+    
+.nav--paises-lista
+{
+    margin-top: 3px;
+    transition: 1s;
+    padding-left: 10px;
+    display: none;
+    position: absolute;
+    margin-left: -20px;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    justify-content: center;
+    width: 150px;
+    font-weight: 100;
+}
+.nav--paises-lista ul
+{
+    list-style: none;
+    padding: 0;
+    width: 90%;
+}
+.nav--paises-lista a li
+{
+    text-align: center;
+    transition: .3s;
+    text-decoration: none;
+}
+.nav--paises-lista li:hover
+{
+    background-color: #dad8d8;
+    border-radius: 25px;
+}
+.nav--paises-lista li 
+{
+    /* margin-bottom: 3px; */
+    width: 100%;
+}
+    .header--nav-paises:hover .nav--paises-lista
+        {
+            display: block;
+        }
+
+
+
+.header--nav-rutas
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    padding: 3px 30px;
+    transition: .3s;
+}
+    .header--nav-rutas:hover
+    {
+        background-color: #e2dddd;
+        border-radius: 25px;
+     }
+.header--nav-naturaleza
+{
+     text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    padding: 3px 30px;
+    transition: .3s;
+}
+    .header--nav-naturaleza:hover
+    {
+        background-color: #e2dddd;
+        border-radius: 25px;
+    }
+.header--nav-playas
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    padding: 3px 30px;
+    transition: .3s;
+}
+.header--nav-playas:hover
+    {
+        background-color: #e2dddd;
+        border-radius: 25px;
+    }
+
+
+.main
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+}
+.main--banner
+{
+    width: 100%; 
+    height: 500px;
+    background-image: url("../../imgs/paisajes/paisaje-elsalvador.jpg");
+    background-size: cover;
+}
+.main--banner-back
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 80%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.main--banner-description
+{
+    border-left: white 3px solid;
+}
+.main--banner-title h1
+{
+    margin: 0;
+    color: white;
+    font-family: 'coolveticaregular';
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-align: right;
+    padding-right: 40px;
+}
+.main--banner-description p
+{
+    margin: 0;
+    color: white;
+    font-family: 'coolveticaregular';
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: left;
+    padding-left: 40px;
+} 
+.main--rutas
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.black-line
+{
+    width: 60%;
+    height: 3px;
+    background-color: black;
+    margin: 60px 0;
+}
+.main--rutas-title
+{
+    width: 100%;
+    height: auto;
+}
+.main--rutas-title h2
+{
+    font-family: 'coolveticaregular';
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.main--ruta1
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+.main--ruta1--title
+{
+    width: 100%;
+    height: 60px;
+    background-image: url("../../imgs/rutas/elsalvador1.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    border-radius: 10px;
+}
+.main--ruta1--back
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: grid;
+    align-items: center;
+    border-radius: 10px;
+    transition: .3s;
+}
+.main--ruta1--back h3
+{
+    font-family: 'coolveticaregular';
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: white;
+    margin: 0;
+    text-align: left;
+    padding-left: 5%;
+}
+.main--ruta1--back:hover
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;    
+}
+/* .main--ruta1:hover .main--ruta1--content
+{
+    animation-play-state: running;
+    display: grid;
+} */
+.main--ruta1--content
+{
+    width: 100%;
+    height: 550px;
+    display: none;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    background-color: #edecec;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: .5s;
+    animation-name: comprimir;
+    animation-iteration-count: 1;
+    animation-play-state: paused, paused;
+    animation-duration: 1s;
+}
+@keyframes comprimir
+{
+    0%
+    {   
+        height: 0;
+    }
+    50%
+    {
+        
+    }
+    100%
+    {
+        height: 550px;
+    }
+}
+@keyframes descomprimir
+{
+    0%
+    {   
+        height: 550px;
+    }
+    50%
+    {
+        
+    }
+    100%
+    {
+        height: 0;
+    }
+}
+.ruta1--content-description
+{
+    width: 90%;
+    height: 90%;
+    opacity: 1;
+}
+.ruta1--content-description p
+{
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 21px;
+    text-align: justify;
+}
+.ruta1--content-slider
+{
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 20%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    opacity: 1;
+}
+.ruta1--slider--imgs
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+.slider--img-1
+{
+    width: 36%;
+    height: 400px;
+    background-image: url("../../imgs/rutas/elsalvador/ruta1-elsalvador-1.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 1;
+    transition: .5s;
+}
+.slider--img-2
+{
+    width: 36%;
+    height: 400px;
+    background-image: url("../../imgs/rutas/elsalvador/ruta1-elsalvador-2.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+.slider--img-3
+{
+    width: 36%;
+    height: 400px;
+    background-image: url("../../imgs/rutas/elsalvador/ruta1-elsalvador-3.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+.slider--img-4
+{
+    width: 36%;
+    height: 400px;
+    background-image: url("../../imgs/rutas/elsalvador/ruta1-elsalvador-4.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+
+.rutar1--slider--bottons
+{
+    width: 100%;
+    height: 100%;
+    /* background-color: brown; */
+    display: grid;
+    grid-template-columns: repeat(4, 5%);
+    grid-template-rows: 25%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+.slider--botton-2, .slider--botton-3, .slider--botton-4
+{
+    width: 60%;
+    height: 60%;
+    background-color:rgb(119, 119, 119);
+    transition: .5s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider--botton-1
+{
+    width: 60%;
+    height: 60%;
+    background-color:black;
+    transition: .5s;
+    border-radius: 50%;
+    cursor: pointer;
+}
