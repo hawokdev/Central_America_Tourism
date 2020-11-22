@@ -199,7 +199,7 @@ body
 {
     width: 100%; 
     height: 500px;
-    background-image: url("../../imgs/paisajes/paisaje-elsalvador.jpg");
+    background-image: url("./imgs/fondo/paisaje-elsalvador.jpg");
     background-size: cover;
 }
 .main--banner-back
@@ -271,7 +271,7 @@ body
     text-align: center;
     margin-bottom: 60px;
 }
-.main--ruta1
+.main--ruta1, .main--ruta2
 {
     width: 100%;
     height: 100%;
@@ -280,18 +280,18 @@ body
     grid-template-rows: auto auto;
     justify-content: center;
 }
-.main--ruta1--title
+.main--ruta1--title, .main--ruta2--title
 {
     width: 100%;
     height: 60px;
-    background-image: url("../../imgs/rutas/elsalvador1.jpg");
+    background-image: url("./imgs/rutas/ruta1/elsalvador1.jpg");
     background-size: cover;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
     border-radius: 10px;
 }
-.main--ruta1--back
+.main--ruta1--back, .main--ruta2--back
 {
     width: 100%;
     height: 100%;
@@ -301,7 +301,7 @@ body
     border-radius: 10px;
     transition: .3s;
 }
-.main--ruta1--back h3
+.main--ruta1--back h3, .main--ruta2--back h3
 {
     font-family: 'coolveticaregular';
     font-size: 45px;
@@ -311,7 +311,7 @@ body
     text-align: left;
     padding-left: 5%;
 }
-.main--ruta1--back:hover
+.main--ruta1--back:hover, .main--ruta2--back:hover
 {
     background-color: rgba(0, 0, 0, 0.4);
     cursor: pointer;    
@@ -321,7 +321,7 @@ body
     animation-play-state: running;
     display: grid;
 } */
-.main--ruta1--content
+.main--ruta1--content, .main--ruta2--content
 {
     width: 100%;
     height: 550px;
@@ -338,7 +338,7 @@ body
     transition: .5s;
     animation-name: comprimir;
     animation-iteration-count: 1;
-    animation-play-state: paused, paused;
+    animation-play-state: paused;
     animation-duration: 1s;
 }
 @keyframes comprimir
@@ -371,13 +371,13 @@ body
         height: 0;
     }
 }
-.ruta1--content-description
+.ruta1--content-description, .ruta2--content-description
 {
     width: 90%;
     height: 90%;
     opacity: 1;
 }
-.ruta1--content-description p
+.ruta1--content-description p, .ruta2--content-description p
 {
     color: black;
     font-family: 'Roboto';
@@ -385,7 +385,7 @@ body
     font-size: 21px;
     text-align: justify;
 }
-.ruta1--content-slider
+.ruta1--content-slider, .ruta2--content-slider
 {
     width: 90%;
     height: 90%;
@@ -397,7 +397,7 @@ body
     align-content: center;
     opacity: 1;
 }
-.ruta1--slider--imgs
+.ruta1--slider--imgs, .ruta2--slider--imgs
 {
     width: 100%;
     height: 100%;
@@ -405,48 +405,48 @@ body
     grid-template-columns: 100%;
     grid-template-rows: 100%;
 }
-.slider--img-1
+.ruta1--slider--img-1, .ruta2--slider--img-1
 {
     width: 36%;
     height: 400px;
-    background-image: url("../../imgs/rutas/elsalvador/ruta1-elsalvador-1.jpg");
+    background-image: url("./imgs/rutas/ruta1/ruta1-elsalvador-1.jpg");
     background-size: cover;
     position: absolute;
     opacity: 1;
     transition: .5s;
 }
-.slider--img-2
+.ruta1--slider--img-2, .ruta2--slider--img-2
 {
     width: 36%;
     height: 400px;
-    background-image: url("../../imgs/rutas/elsalvador/ruta1-elsalvador-2.jpg");
+    background-image: url("./imgs/rutas/ruta1/ruta1-elsalvador-2.jpg");
     background-size: cover;
     position: absolute;
     opacity: 0;
     transition: .5s;
 }
-.slider--img-3
+.ruta1--slider--img-3, .ruta2--slider--img-3
 {
     width: 36%;
     height: 400px;
-    background-image: url("../../imgs/rutas/elsalvador/ruta1-elsalvador-3.jpg");
+    background-image: url("./imgs/rutas/ruta1/ruta1-elsalvador-3.jpg");
     background-size: cover;
     position: absolute;
     opacity: 0;
     transition: .5s;
 }
-.slider--img-4
+.ruta1--slider--img-4, .ruta2--slider--img-4
 {
     width: 36%;
     height: 400px;
-    background-image: url("../../imgs/rutas/elsalvador/ruta1-elsalvador-4.jpg");
+    background-image: url("./imgs/rutas/ruta1/ruta1-elsalvador-4.jpg");
     background-size: cover;
     position: absolute;
     opacity: 0;
     transition: .5s;
 }
 
-.rutar1--slider--bottons
+.ruta1--slider--bottons, .ruta2--slider--bottons
 {
     width: 100%;
     height: 100%;
@@ -459,7 +459,7 @@ body
     justify-items: center;
     align-content: center;
 }
-.slider--botton-2, .slider--botton-3, .slider--botton-4
+.ruta1--slider--botton-2, .ruta1--slider--botton-3, .ruta1--slider--botton-4
 {
     width: 60%;
     height: 60%;
@@ -468,7 +468,16 @@ body
     border-radius: 50%;
     cursor: pointer;
 }
-.slider--botton-1
+.ruta2--slider--botton-2, .ruta2--slider--botton-3, .ruta2--slider--botton-4
+{
+    width: 60%;
+    height: 60%;
+    background-color:rgb(119, 119, 119);
+    transition: .5s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ruta1--slider--botton-1, .ruta2--slider--botton-1
 {
     width: 60%;
     height: 60%;
