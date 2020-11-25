@@ -10,7 +10,34 @@
     <title>Turismo en El Salvador</title>
 </head>
 <body>
-    <div class="container">
+
+
+    <div class="menu--despegable" id="menu-despegable">
+        <div class="header--despegable">
+            <div class="header--despegable--button" id="despegable--button-close">
+                <span class="icon-chevron-small-right"></span>
+            </div>
+            <div class="header--despegable--title">
+                <span class="icon-paperplane"></span>Central America Tourism
+            </div>
+        </div>
+        <nav class="nav--despegable-container">
+            <div></div>
+            <div class="nav--despegable">
+                <a href="" class="nav--despegable-inicio"><div><span class="icon-home1"></span>Inicio</div></a>
+
+                <a href="#rutas" class="nav--despegable-rutas"><div><span class="icon-map-signs"></span>Rutas Turísticas</div></a>
+
+                <a href="#naturaleza" class="nav--despegable-naturaleza"><div><span class="icon-leaf"></span>Naturaleza</div></a>
+
+                <a href="#playa" class="nav--despegable-playas"><div><span class="icon-beach_access"></span>Playas</div></a>
+            </div>
+            
+        </nav>
+    </div>
+
+
+    <div class="container" id="container-all">
 <!-- HEADER -->
 
         <header class="header">
@@ -19,7 +46,7 @@
                <img src="../../imgs/banderas/elsalvador.png" alt="">
             </div>
           <div class="header--nav">
-            <a href="" class="header--nav-inicio"><div><span class="icon-home1"></span>Inicio</div></a>
+            <a href="../../index.html" class="header--nav-inicio"><div><span class="icon-home1"></span>Inicio</div></a>
             <div href="" class="header--nav-paises">     
             <span class="icon-globe"></span>Países<span class="icon-cheveron-down"></span>
                <div class="nav--paises-lista">
@@ -33,39 +60,42 @@
                    </ul>
                </div>
             </div>
-            <a href="" class="header--nav-rutas"><div><span class="icon-map-signs"></span>Rutas Turísticas</div></a>
-            <a href="" class="header--nav-naturaleza"><span class="icon-leaf"></span>Naturaleza</a>
-            <a href="" class="header--nav-playas"><span class="icon-beach_access"></span>Playas</a>
+            <a href="#rutas" class="header--nav-rutas"><div><span class="icon-map-signs"></span>Rutas Turísticas</div></a>
+            <a href="#naturaleza" class="header--nav-naturaleza"><span class="icon-leaf"></span>Naturaleza</a>
+            <a href="#playa" class="header--nav-playas"><span class="icon-beach_access"></span>Playas</a>
           </div>  
         </header>
+        <div class="main--banner">
+            <div class="main--banner-back">
+                 <div class="main--banner-title">
+                     <h1>El Salvador</h1>
+                 </div>
+                 <div class="main--banner-description">
+                    <p>
+                        Es conocida por sus playas en el océano Pacífico, los 
+                        sitios de surf y el paisaje montañoso. Su Ruta de las 
+                        Flores es un camino serpenteante que pasa por plantaciones 
+                        de café, bosques tropicales con cascadas y ciudades como 
+                        Juayúa, con sus festivales gastronómicos cada fin de semana, 
+                        junto con Ataco, donde hay alegres murales.   
+                      </p>
+                 </div>   
+            </div>   
+        </div>
+
+        <div class="burgerBotton-container" id="despegable--button-open">
+            <span class="icon-menu2"></span>
+        </div>
 
 <!-- MAIN -->
         <main class="main">
-            <div class="main--banner">
-                <div class="main--banner-back">
-                     <div class="main--banner-title">
-                         <h1>El Salvador</h1>
-                     </div>
-                     <div class="main--banner-description">
-                        <p>
-                            Es conocida por sus playas en el océano Pacífico, los 
-                            sitios de surf y el paisaje montañoso. Su Ruta de las 
-                            Flores es un camino serpenteante que pasa por plantaciones 
-                            de café, bosques tropicales con cascadas y ciudades como 
-                            Juayúa, con sus festivales gastronómicos cada fin de semana, 
-                            junto con Ataco, donde hay alegres murales.   
-                          </p>
-                     </div>   
-                </div>   
-            </div>
-
+           
             <div class="main--rutas">
-                <a href="" name="rutas" class="black-line">
-                    <div>
-
-                    </div>
-                </a>  
+               
                 <div class="main--rutas-title">
+                    <div class="black-line">
+                        <a href="" name="rutas"></a>
+                    </div>
                     <h2>
                         Rutas turísticas <span class="icon-map-signs"></span>
                     </h2>
@@ -115,24 +145,21 @@
                 <div class="main--ruta2">
                     <div class="main--ruta2--title">
                         <div class="main--ruta2--back" id="mainRuta2">
-                            <h3>Ruta de las Flores</h3>
+                            <h3>Ruta Arqueológica de El Salvador</h3>
                         </div>  
                     </div>
                     <div class="main--ruta2--content" id="contentRuta2">
                         <div class="ruta2--content-description">
                             <p>
-                                La Ruta de las Flores es una encantadora 
-                                travesía sobre la cordillera Apaneca- Ilamatepeq 
-                                entre los departamentos de Ahuachapán y Sonsonate 
-                                en el occidente de El Salvador, agradable clima fresco, 
-                                sitios impregnados de tradiciones e historia, una 
-                                peculiar gastronomía y variedad de hostales y pequeños 
-                                hoteles que harán de su estadía un colorido recuerdo de 
-                                su paso por El Salvador. La Ruta de Las Flores está impregnada 
-                                de mucha historia, con la participación de personajes e 
-                                instituciones que han tenido relevantes actuaciones para 
-                                alcanzar el reconocimiento de la población de El Salvador 
-                                y la afluencia del turismo internacional.
+                                Durante esta ruta podrás visitar la vasta cantidad de lugares 
+                                arqueológicos que hay en el territorio salvadoreño. Por ello, 
+                                podrás contar con un viaje único que te llevará a localidades 
+                                y estructuras que no verás en ninguna otra parte.
+                                Dentro del abanico de estructuras que se presentarán ante tus 
+                                ojos estarán pirámides, templos ceremoniales, patios de juegos 
+                                y mucho más. Asimismo, tendrás acceso a una ventana única desde 
+                                la cual observar detalles de la cotidianidad de esta cultura a 
+                                través de lo que dejaron atrás.
                             </p>
                         </div>
 
@@ -152,30 +179,238 @@
                         </div>
                     </div>   
                 </div>
+                <br>
                 <div class="main--ruta3">
+                    <div class="main--ruta3--title">
+                        <div class="main--ruta3--back" id="mainRuta3">
+                            <h3>Ruta de las Mil Cumbres</h3>
+                        </div>  
+                    </div>
+                    <div class="main--ruta3--content" id="contentRuta3">
+                        <div class="ruta3--content-description">
+                            <p>
+                                La Ruta de las Mil Cumbres es una ruta turística de El Salvador 
+                                que asciende desde la costa hasta las alturas del departamento 
+                                de Usulután. 
+                                Usulután se encuentra ubicado en la zona oriental de El Salvador 
+                                a una distancia de 107 km desde la capital.       
+                                Te invitamos a descubrir la magia de la ruta que inicia en 
+                                la planicie costera oriental y finaliza en la cumbre de la 
+                                Sierra Tecapa, que además ofrece una variedad de atractivos 
+                                que no dejan cabida al aburrimiento.
+                                Recorrer la Ruta de las mil cumbres, también conocida como 
+                                Circuito Bahía Cierra, es un viaje lleno de impresionantes 
+                                bellezas naturales, desde puntos muy turísticos con largas 
+                                y accesibles playas hasta pueblos montañosos que mantienen su 
+                                esencia y ofrecen rincones tranquilos con un tradicional clima 
+                                fresco.
+                            </p>
+                        </div>
 
+                        <div class="ruta3--content-slider">
+                            <div class="ruta3--slider--imgs">
+                                <div class="ruta3--slider--img-1" id="ruta3-slider-1"></div>
+                                <div class="ruta3--slider--img-2" id="ruta3-slider-2"></div>
+                                <div class="ruta3--slider--img-3" id="ruta3-slider-3"></div>
+                                <div class="ruta3--slider--img-4" id="ruta3-slider-4"></div>
+                            </div>
+                            <div class="ruta3--slider--bottons">
+                                <div class="ruta3--slider--botton-1" id="ruta3-botton-1"></div>
+                                <div class="ruta3--slider--botton-2" id="ruta3-botton-2"></div>
+                                <div class="ruta3--slider--botton-3" id="ruta3-botton-3"></div>
+                                <div class="ruta3--slider--botton-4" id="ruta3-botton-4"></div>
+                            </div>
+                        </div>
+                    </div>   
                 </div>
             </div>
 
             <div class="main--naturaleza">
+                <div class="main--naturaleza-blackline"><a href="" name="naturaleza"></a></div>
+                <div class="main--naturaleza--title">
+                    <h2>Naturaleza<span class="icon-leaf"></span></h2>
+                </div>
+                
+                <div class="main--naturaleza-1">
+                    <div class="naturaleza-1--title">
+                        <h3>
+                            Volcán Ilamatepec
+                        </h3>
+                    </div>
+                    <div class="naturaleza-1--map">
+                        <iframe class="naturaleza-1--Gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61980.98875075356!2d-89.65068754814679!3d13.850332935324436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62c16156d6e997%3A0x2fd88a9ab0dbc675!2sVolc%C3%A1n%20de%20Santa%20Ana!5e0!3m2!1ses!2ssv!4v1606256972643!5m2!1ses!2ssv" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="naturaleza-1--description">
+                        <p>	El volcán Ilamatepec, ubicado en Santa Ana,
+                             y el más alto del país es uno de los 
+                             atractivos que más atrae visitantes 
+                             nacionales y extranjeros, según reportes de 
+                             la Policía de Turismo.
+                            La mayoría de visitantes se arma de valor 
+                            para escalar este volcán, que esta a 2,381 
+                            metros sobre el nivel del mar y es parte de 
+                            la cordillera de Apaneca, con el objetivo es  
+                            llegar hasta su cráter para observar su laguna 
+                            color turquesa; además de una vista impresionante 
+                            del lago de Coatepeque y gran parte de occidente, 
+                            que incluye el Cerro Verde y el volcán de Izalco, 
+                            conocido también como el Faro del Pacífico. Asegura 
+                            que los visitantes siempre prefieren subir el volcán 
+                            de Santa Ana antes que el de Izalco para caminar 
+                            por el cráter y ver la laguna. El 95 % es visitado 
+                            por extranjero y el 5 % por nacionales.</p>
+                    </div>
+                    <div class="naturaleza-1--sliders">
+                        <div class="naturaleza-1--slider-1">
+                            <div class="naturaleza-1--slider-1-back"></div>
+                        </div>
+                        <div class="naturaleza-1--slider-2">
+                            <div class="naturaleza-1--slider-2-back"></div>
+                        </div>
+                        <div class="naturaleza-1--slider-3">
+                            <div class="naturaleza-1--slider-3-back"></div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
 
+                <div class="main--naturaleza-2">
+                    <div class="naturaleza-2--title">
+                        <h3>
+                            Lago de Coatepeque
+                        </h3>
+                    </div>
+                    <div class="naturaleza-2--map">
+                        <iframe class="naturaleza-1--Gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61977.5335456064!2d-89.58263940542767!3d13.863281593063757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62dcd48bbf3581%3A0xcbb51df50ff589a9!2sLago%20de%20Coatepeque!5e0!3m2!1ses!2ssv!4v1606260851112!5m2!1ses!2ssv" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="naturaleza-2--description">
+                        <p>	El Lago Coatepeque en el 2013 participio en la 
+                            octava maravilla del mundo donde obtuvo el segundo 
+                            lugar, siendo así uno de los destinos preferidos por 
+                            turistas de diversos países que lo han visitado. 
+                            Declarado centro de interés turístico nacional 
+                            Coatepeque es uno de los destinos que no se puede 
+                            dejar de visitar, simplemente porque nos enamora a 
+                            primera vista.
+                            El lago de Coatepeque tiene una condición ideal 
+                            para practicar el ecoturismo, la observación de 
+                            aves residentes y migratorias, se pueden realizar 
+                            caminatas en los alrededores del lago, también 
+                            permite la práctica de ciclismo de montaña. 
+                            En el lago se practica la pesca, el buceo y 
+                            se pueden recorrer sus aguas en kayak, jet ski
+                            o lancha.
+                        </p>
+                    </div>
+
+                    <div class="naturaleza-2--sliders">
+                        <div class="naturaleza-2--slider-1">
+                            <div class="naturaleza-2--slider-1-back"></div>
+                        </div>
+                        <div class="naturaleza-2--slider-2">
+                            <div class="naturaleza-2--slider-2-back"></div>
+                        </div>
+                        <div class="naturaleza-2--slider-3">
+                            <div class="naturaleza-2--slider-3-back"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <hr>
 
             <div class="main--playas">
+                <div class="main--playas-blackline"><a href="" name="playa"></a></div>
+                <div class="main--playas--title">
+                    <h2>Playas<span class="icon-beach_access"></span></h2>
+                </div>
 
+                <div class="main--playas-1">
+                    <div class="playas-1--title">
+                        <h3>
+                            Playa el Tunco
+                        </h3>
+                    </div>
+                    <div class="playas-1--map">
+                        <iframe class="playas-1--Gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15518.821563387823!2d-89.39014368310242!3d13.492242663850739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7cd59f22c8da2b%3A0xc9cb9224ff2461d7!2sPlaya%20El%20Tunco!5e0!3m2!1ses!2ssv!4v1606262090747!5m2!1ses!2ssv" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="playas-1--description">
+                        <p>	El Tunco es una playa de arena negra, muy reconocida 
+                            internacionalmente por el turismo en el que destaca 
+                            el surf, esta ubicada en el departamento de La 
+                            Libertad. En esta playa podrás realizar diversas 
+                            actividades, desde tomar el sol en una cómoda hamaca, 
+                            caminatas, degustar de su gastronomía, hasta dominar 
+                            las arrebatadas olas. A continuación, te contamos a 
+                            detalle lo que te espera al visitar este lugar 
+                            turístico de El Salvador. Desde la capital hasta la 
+                            playa se toma unos 45 minutos a 1 hora en vehículo. 
+                            Se ubica a solo 41 kms de la capital San Salvador. 
+                        </p>
+                    </div>
+                    <div class="playas-1--sliders">
+                        <div class="playas-1--slider-1">
+                            <div class="playas-1--slider-1-back"></div>
+                        </div>
+                        <div class="playas-1--slider-2">
+                            <div class="playas-1--slider-2-back"></div>
+                        </div>
+                        <div class="playas-1--slider-3">
+                            <div class="playas-1--slider-3-back"></div>
+                        </div>
+                    </div>
+                </div> 
+                <hr>
+                <div class="main--playas-2">
+                    <div class="playas-2--title">
+                        <h3>
+                            Playa Los Cóbanos
+                        </h3>
+                    </div>
+                    <div class="playas-2--map">
+                        <iframe class="playas-1--Gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15516.688872496012!2d-89.80542148861002!3d13.525020460655323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7d4cc12087c465%3A0xb431edcb33ff0e47!2sPlaya%20Los%20Cobanos!5e0!3m2!1ses!2ssv!4v1606263957530!5m2!1ses!2ssv" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                    <div class="playas-2--description">
+                        <p>	La playa Los Cóbanos es una zona protegida, ubicada en el 
+                            municipio de Acajutla del  departamento de Sonsonate, posee 
+                            unas singulares arenas doradas que resaltan frente a otros 
+                            destinos turísticos. Entre sus principales actividades acuáticas 
+                            se encuentran el Snorkel, buceo, fútbol playa, este sitio es 
+                            perfecto ya que guarda tesoros visuales bajo sus cálidas y 
+                            cristalinas aguas. Siendo recomendada para el  turismo El Salvador
+                            Los Cobanos tiene 264.6 kms² de ecosistema marino protegido, 
+                            que podrás apreciar y admirar practicando el buceo, Snorkel o 
+                            simplemente caminando a sus orillas. Sin lugar a dudas una 
+                            experiencia que no puedes dejar pasar para disfrutar junto con 
+                            tu familia y amigos. 
+                        </p>
+                    </div>
+                    <div class="playas-2--sliders">
+                        <div class="playas-2--slider-1">
+                            <div class="playas-2--slider-1-back"></div>
+                        </div>
+                        <div class="playas-2--slider-2">
+                            <div class="playas-2--slider-2-back"></div>
+                        </div>
+                        <div class="playas-2--slider-3">
+                            <div class="playas-2--slider-3-back"></div>
+                        </div>
+                    </div>
+                </div> 
             </div>
             
         </main>
 <!-- FOOTER -->
-        <footer class="footer">
-            <div class="footer--social">
-
-            </div>
-            <div class="footer--terminos">
-
-            </div>
-        </footer>
+    <footer class="footer">
+        <div class="footer--social">
+        <div><a href=""><span class="icon-pinterest1"></span></a></div>
+        <div><a href=""><span class="icon-instagram"></span></a></div>
+        <div><a href=""><span class="icon-twitter"></span></a></div>
+        </div>
+        <div class="footer--terminos">
+            © 2020 Central America Tourism
+        </div>
+    </footer>
     </div>
     <script src="./script.js"></script>
+
 </body>
 </html>
