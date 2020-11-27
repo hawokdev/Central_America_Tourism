@@ -3,6 +3,101 @@ body
     margin: 0;
     padding: 0;
 }
+
+
+
+.menu--despegable
+{
+    width: 95%;
+    height: 100%;
+    position: fixed;
+    right: -100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    background-color: white;
+    /* border-left: rgb(255, 255, 255) 1px solid; */
+    box-shadow: 0px -1px 5px 0px black;
+    z-index: 3;
+    transition: .3s;
+}
+.header--despegable
+{
+    width: 100%;
+    height: 100%;
+    /* background-color: ; */
+    display: grid;
+    /* border-bottom: black 1px solid; */
+    box-shadow: 3px 0px 5px 0px black;
+    grid-template-columns: 20% 75%;
+    column-gap: 1%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: right;
+}
+.header--despegable--button
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+ }
+.header--despegable--button span
+{
+    font-size: 40px;
+    justify-self: left;
+    cursor: pointer;
+}
+.header--despegable--title
+{
+    font-size: 35px;
+    font-family: 'kind_and_rich_-_personal_usRg';
+    display: flex;
+}
+
+.nav--despegable-container
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 10% 80%;
+    grid-template-rows: 100%;
+    justify-content: right;
+    margin-top: 5px;
+}
+.nav--despegable
+{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 8% 8% 8% 8%;
+    text-align: right;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+.nav--despegable span
+{
+    margin-right: 5px;
+}
+.nav--despegable a
+{
+    text-decoration: none;
+    color: black;
+}
+.nav--despegable-inicio:hover, .nav--despegable-rutas:hover, .nav--despegable-naturaleza:hover, .nav--despegable-playas:hover
+{
+    background-color: #e2dddd;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.nav--despegable-inicio, .nav--despegable-rutas, .nav--despegable-naturaleza, .nav--despegable-playas
+{
+    padding: 5px;
+}
+
 .container
 {   
     height: 100%;
@@ -196,22 +291,48 @@ body
                 transform: rotate(180deg);
             }
         }
+
+        .burgerBotton-container
+        {
+            width: 42px;
+            height: 42px;
+            margin-top: 0px;
+            /* margin-top: 5px;
+            padding-right: 5px; */
+            display: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            box-shadow: 0px 0px 6px 0px black;
+            position: fixed;
+            top: 10px;
+            right: 5px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .burgerBotton-container span
+        {
+            font-size: 25px;
+            color: rgb(0, 0, 0)
+        }
+
+
 .header--nav
 {
     display: grid;
-    grid-template-columns: 11% 11% 11% 11%;
+    grid-template-columns: 12% 12% 12% 12%;
     grid-template-rows: 100%;
     /* column-gap: 70px; */
     justify-content: center;
     align-items: center;
     font-family: 'Roboto';
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     font-weight: 400;
 }
 .header--nav span
 {
-    padding-right: 10px;
+    padding-right: 5px;
 }
 .header--nav-inicio
 {
@@ -269,7 +390,7 @@ body
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     justify-content: center;
-    width: 11%;
+    width: 13%;
     font-weight: 100;
 }
 .nav--paises-lista ul
@@ -330,7 +451,7 @@ body
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     justify-content: center;
-    width: 11%;
+    width: 13%;
     font-weight: 100;
 }
 .nav--idiomas-lista ul
@@ -370,7 +491,7 @@ body
     border: 1px solid black;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 500px 500px 650px;
+    grid-template-rows: 500px 500px auto;
 
 }
 .main--banner
@@ -381,16 +502,13 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
-    grid-template-columns: 35% 40%;
+    grid-template-columns: 44% 50%;
     grid-template-rows: 60%;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
-.main--banner-linea
-{
-    border-right: white 3px solid;
-}
+
 
 .main--banner h1
 {
@@ -400,11 +518,12 @@ body
     padding-right: 50px;
     color: white;
     letter-spacing: 2px;
+    border-right: white 3px solid;
 }
 .main--banner p
 {
     font-family: 'coolveticaregular';
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
     padding-left: 50px;
     color: white;
@@ -419,8 +538,8 @@ body
     justify-content: center;
     align-content: center;
     align-items: center;
-    grid-template-columns: 30% 30%;
-    grid-template-rows: 80%;
+    grid-template-columns: 40% 45%;
+    grid-template-rows: 90%;
     column-gap: 10%;
 }
 .main--about-who
@@ -428,8 +547,9 @@ body
     height: 100%;
     display: grid;
     grid-template-columns: 90%;
-    grid-template-rows: 30% 12% 50%;
+    grid-template-rows: 25% 12% 50%;
     justify-content: center;
+    justify-items: center;
     align-items: center;
     align-content: center;
     background-color: #edecec;
@@ -438,11 +558,11 @@ body
 .main--about-who span
 {
     text-align: center;
-    font-size: 80px;
+    font-size: 70px;
 }
 .main--about-who h2
 {
-    font-size: 35px;
+    font-size: 32px;
     font-family: 'coolveticaregular';
     text-align: center;
     letter-spacing: 2px;
@@ -450,7 +570,7 @@ body
 .main--about-who p
 {
     font-family: 'Roboto';
-    font-size: 21px;
+    font-size: 25px;
     font-weight: 300;
     text-align: justify;
 }
@@ -459,7 +579,7 @@ body
     height: 100%;
     display: grid;
     grid-template-columns: 90%;
-    grid-template-rows: 30% 12% 50%;
+    grid-template-rows: 25% 12% 50%;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -469,11 +589,11 @@ body
 .main--about-what span
 {
     text-align: center;
-    font-size: 80px;
+    font-size: 70px;
 }
 .main--about-what h2
 {
-    font-size: 35px;
+    font-size: 32px;
     font-family: 'coolveticaregular';
     text-align: center;
     letter-spacing: 2px;
@@ -481,7 +601,7 @@ body
 .main--about-what p
 {
     font-family: 'Roboto';
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 300;
     text-align: justify;
 }
@@ -542,7 +662,7 @@ body
     height: 400px;
     background-color: #e2e0e0;
     border-radius: 25px;
-    right: 193px;
+    right: 130px;
     opacity: 1;
     margin-top: 60px;
     display: grid;
@@ -628,7 +748,7 @@ body
     background-color: #edecec;
     /* background-color: #f05454; */
     border-radius: 25px;
-    right: 193px;
+    right: 130px;
     opacity: 0;
     transition: .5s;
     display: none;
@@ -733,7 +853,7 @@ body
     /* background-color: #f05454; */
     margin-top: 20px;
     border-radius: 25px;
-    right: 193px;
+    right: 130px;
     opacity: 0;
     transition: .5s;
     display: none;
@@ -839,7 +959,7 @@ body
     /* background-color: #f05454; */
     border-radius: 25px;
     margin-top: -59px;
-    right: 193px;
+    right: 130px;
     opacity: 0;
     transition: .5s;
     display: none;
@@ -941,7 +1061,7 @@ body
     /* background-color: #f05454; */
     margin-top: -109px;
     border-radius: 25px;
-    right: 193px;
+    right: 130px;
     opacity: 0;
     transition: .5s;
     display: none;
@@ -1048,7 +1168,7 @@ body
     /* background-color: #f05454; */
     border-radius: 25px;
     margin-top: -92px;
-    right: 193px;
+    right: 130px;
     opacity: 0;
     transition: .5s;
     display: none;
@@ -1148,7 +1268,7 @@ body
     /* background-color: #f05454; */
     border-radius: 25px;
     margin-top: -212px;
-    right: 193px;
+    right: 130px;
     opacity: 0;
     transition: .5s;
     display: none;
@@ -1249,7 +1369,7 @@ body
     /* background-color: #f05454; */
     border-radius: 25px;
     margin-top: -260px;
-    right: 193px;
+    right: 130px;
     opacity: 0;
     transition: .5s;
     display: none;
@@ -1394,4 +1514,148 @@ body
 .anclas
 {
     position: absolute;
+}
+
+@media screen and (max-width:1100px)
+{
+    /* .header
+    {
+        border: 3px solid green
+    } */
+    .main--review
+    {
+        display: none;
+    }
+    
+    .main--banner h1
+    {
+        font-size: 50px;
+    }
+    .main--about-what p, .main--about-who p
+    {
+        font-size: 23px;
+    }
+}
+@media screen and (max-width:880px)
+{
+
+    /* .header
+    {
+        border: 3px solid rgb(255, 0, 0);
+    } */
+    .header--nav
+    {
+        grid-template-columns: 16% 16% 16% 16%;
+    
+    }
+    .header--title
+    {
+        grid-template-columns: 70% 10px 10px 10px;
+    
+    }
+
+    .main
+    {
+        grid-template-rows: 500px 1000px auto;
+    }
+    .main--banner
+    {
+        grid-template-columns: 70%;
+        grid-template-rows: 30% 30%;
+    }
+    .main--banner h1
+    {
+        font-size: 40px;
+        text-align: center;
+        padding-right: 0;
+        border-right: none;
+        padding-bottom: 5%;
+        border-bottom: white 3px solid;
+    }
+    .main--banner p
+    {
+        padding-left: 0;
+        justify-self: flex-start;
+        text-align: center;
+        align-self: start;
+    }
+    .main--about
+    {
+        grid-template-columns: 80%;
+        grid-template-rows: 40% 45%;
+        row-gap: 5%;
+    }
+    .main--about-what p,.main--about-who p
+    {
+        font-size: 23px;
+    }
+    
+    .main--about-what h2,  .main--about-who h2
+    {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:480px)
+{
+    .main--about
+    {
+        grid-template-columns: 90%;
+    }
+    .main--about-what p,.main--about-who p
+    {
+        font-size: 20px;
+    }
+
+    .main--about-what h2,  .main--about-who h2
+    {
+        font-size: 25px;
+    }
+
+    .footer--social
+    {
+        grid-template-columns: repeat(3, 10%);
+    }
+   
+    .menu--despegable
+    {
+        width: 95%;
+    }
+}
+@media screen and (max-width:632px)
+{
+    .header
+    {
+        height: 55px;
+        grid-template-columns: 85% 10%;
+        grid-template-rows: 100%;
+    }
+    .header--nav
+    {
+        display: none;
+    }
+    .burgerBotton-container
+    {
+        display: grid;
+        box-sizing: border-box;
+    }
+    .menu--despegable
+    {
+        width: 70%;
+    }
+    .header--title-description h1
+    {
+        font-size: 35px;
+        text-align: right;
+        padding-left: 3px;
+    }
+    .header--title
+    {
+        grid-template-columns: 75% 10px 10px 10px;
+        justify-items: center;
+        align-content: center;
+    }
+    .header--title-description i
+    {
+        display: none;
+    }
 }
