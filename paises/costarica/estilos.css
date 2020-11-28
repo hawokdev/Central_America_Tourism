@@ -1,0 +1,1310 @@
+body
+{
+    padding: 0;
+    margin: 0;  
+}
+
+.menu--despegable
+{
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    right: -100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    background-color: white;
+    /* border-left: rgb(255, 255, 255) 1px solid; */
+    box-shadow: 0px -1px 5px 0px black;
+    z-index: 3;
+    transition: .3s;
+}
+
+.header--despegable
+{
+    width: 100%;
+    height: 100%;
+    background-color: ;
+    display: grid;
+    /* border-bottom: black 1px solid; */
+    box-shadow: 3px 0px 5px 0px black;
+    grid-template-columns: 20% 75%;
+    column-gap: 1%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: right;
+}
+.header--despegable--button
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+ }
+.header--despegable--button span
+{
+    font-size: 40px;
+    justify-self: left;
+    cursor: pointer;
+}
+.header--despegable--title
+{
+    font-size: 35px;
+    font-family: 'kind_and_rich_-_personal_usRg';
+    display: flex;
+}
+
+.nav--despegable-container
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 10% 80%;
+    grid-template-rows: 100%;
+    justify-content: right;
+    margin-top: 5px;
+}
+.nav--despegable
+{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 8% 8% 8% 8%;
+    text-align: right;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+.nav--despegable span
+{
+    margin-right: 5px;
+}
+.nav--despegable a
+{
+    text-decoration: none;
+    color: black;
+}
+.nav--despegable-inicio:hover, .nav--despegable-rutas:hover, .nav--despegable-naturaleza:hover, .nav--despegable-playas:hover
+{
+    background-color: #e2dddd;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.nav--despegable-inicio, .nav--despegable-rutas, .nav--despegable-naturaleza, .nav--despegable-playas
+{
+    padding: 5px;
+}
+
+.container
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+}
+.header
+{
+    width: 100%;
+    height: 110px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 65% 30%;
+    /* border: 1px solid black; */
+}
+.header--title
+{
+    width: 100%;
+    height: 100%;
+    font-family: 'kind_and_rich_-_personal_usRg'; 
+    font-weight: 100;
+    font-size: 45px;
+    display: grid;
+    grid-template-columns: 64% 31%;
+    align-items: center;
+}
+.header--title img
+{
+    width: 50px;
+    padding-left: 10px;
+}
+.header--title div
+{
+    text-align: right;
+}
+.header--nav
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+.header--nav-inicio
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    padding: 3px 30px;
+    transition: .3s;
+}
+.header--nav-inicio:hover
+    {
+        background-color: #e2dddd;
+        border-radius: 25px;
+    }
+.header--nav-inicio span, .header--nav-paises span, .header--nav-rutas span, .header--nav-naturaleza span,.header--nav-playas span 
+{
+    padding-right: 5px;
+}
+.header--nav-paises
+{
+    color: black;
+    padding: 3px 30px;
+    transition: .5s;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+}
+.header--nav-paises a
+{
+    text-decoration: none;
+    color: black;
+}
+
+    .header--nav-paises:hover
+    {
+        background-color: #e2dddd;
+        border-radius: 25px;
+    }
+    
+.nav--paises-lista
+{
+    margin-top: 3px;
+    transition: 1s;
+    padding-left: 10px;
+    display: none;
+    position: absolute;
+    margin-left: -20px;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    justify-content: center;
+    width: 150px;
+    font-weight: 100;
+}
+.nav--paises-lista ul
+{
+    list-style: none;
+    padding: 0;
+    width: 90%;
+}
+.nav--paises-lista a li
+{
+    text-align: center;
+    transition: .3s;
+    text-decoration: none;
+}
+.nav--paises-lista li:hover
+{
+    background-color: #dad8d8;
+    border-radius: 25px;
+}
+.nav--paises-lista li 
+{
+    /* margin-bottom: 3px; */
+    width: 100%;
+}
+    .header--nav-paises:hover .nav--paises-lista
+        {
+            display: block;
+        }
+
+
+
+.header--nav-rutas
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    padding: 3px 30px;
+    transition: .3s;
+}
+    .header--nav-rutas:hover
+    {
+        background-color: #e2dddd;
+        border-radius: 25px;
+     }
+.header--nav-naturaleza
+{
+     text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    padding: 3px 30px;
+    transition: .3s;
+}
+    .header--nav-naturaleza:hover
+    {
+        background-color: #e2dddd;
+        border-radius: 25px;
+    }
+.header--nav-playas
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    padding: 3px 30px;
+    transition: .3s;
+}
+.header--nav-playas:hover
+    {
+        background-color: #e2dddd;
+        border-radius: 25px;
+    }
+
+
+.main
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+}
+.main--banner
+{
+    width: 100%; 
+    height: 500px;
+    background-image: url("./imgs/fondo/paisaje-elsalvador.jpg");
+    background-size: cover;
+    /* position: relative; */
+    /* z-index: 3; */
+}
+.main--banner-back
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 80%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.main--banner-description
+{
+    border-left: white 3px solid;
+}
+.main--banner-title h1
+{
+    margin: 0;
+    color: white;
+    font-family: 'coolveticaregular';
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-align: right;
+    padding-right: 40px;
+}
+.main--banner-description p
+{
+    margin: 0;
+    color: white;
+    font-family: 'coolveticaregular';
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: left;
+    padding-left: 40px;
+} 
+.main--rutas
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.black-line--container
+{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 95% 5%;
+    grid-template-rows: 100px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+    .burgerBotton-container2
+    {
+        width: 42px;
+        height: 42px;
+        display: none;
+        background-color: rgba(255, 251, 251, 0.7);
+        border-radius: 50%;
+        box-shadow: 0px 0px 6px 0px black;
+        position: fixed;
+        top: 5px;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+    }
+    .burgerBotton-container2 span
+    {
+        font-size: 25px;
+        color: rgb(77, 75, 75);
+    }
+        .burgerBotton-container
+        {
+            width: 42px;
+            height: 42px;
+            margin-top: 0px;
+            /* margin-top: 5px;
+            padding-right: 5px; */
+            display: grid;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            box-shadow: 0px 0px 6px 0px black;
+            position: sticky;   
+            margin-left: 95%;
+            top: 10px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .burgerBotton-container span
+        {
+            font-size: 25px;
+            color: rgb(0, 0, 0)
+        }
+
+
+.main--rutas-title
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+.black-line 
+{
+    width: 60%;
+    height: 3px;
+    margin-left: 5%;
+    background-color: black;
+    margin: 60px 0;
+}
+.main--rutas-title h2
+{
+    font-family: 'coolveticaregular';
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.main--ruta1, .main--ruta2, .main--ruta3
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+.main--ruta1--title
+{
+    width: 100%;
+    height: 60px;
+    background-image: url("./imgs/rutas/ruta1/elsalvador1.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    border-radius: 10px;
+}
+.main--ruta2--title
+{
+    width: 100%;
+    height: 60px;
+    background-image: url("./imgs/rutas/ruta2/elsalvador-2.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    border-radius: 10px;
+}
+.main--ruta3--title
+{
+    width: 100%;
+    height: 60px;
+    background-image: url("./imgs/rutas/ruta3/elsalvador-3.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    border-radius: 10px;
+}
+.main--ruta1--back, .main--ruta2--back, .main--ruta3--back
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: grid;
+    align-items: center;
+    border-radius: 10px;
+    transition: .3s;
+}
+.main--ruta1--back h3, .main--ruta2--back h3, .main--ruta3--back h3
+{
+    font-family: 'coolveticaregular';
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: white;
+    margin: 0;
+    text-align: left;
+    padding-left: 5%;
+}
+.main--ruta1--back:hover, .main--ruta2--back:hover, .main--ruta3--back:hover
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;    
+}
+/* .main--ruta1:hover .main--ruta1--content
+{
+    animation-play-state: running;
+    display: grid;
+} */
+.main--ruta1--content, .main--ruta2--content, .main--ruta3--content
+{
+    width: 100%;
+    height: 553px;
+    display: none;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    background-color: #edecec;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: .5s;
+    animation-name: comprimir;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+    animation-duration: 1s;
+}
+@keyframes comprimir
+{
+    0%
+    {   
+        height: 0;
+    }
+    50%
+    {
+        
+    }
+    100%
+    {
+        height: 553px;
+    }
+}
+@keyframes descomprimir
+{
+    0%
+    {   
+        height: 553px;
+    }
+    50%
+    {
+        
+    }
+    100%
+    {
+        height: 0;
+    }
+}
+.ruta1--content-description, .ruta2--content-description, .ruta3--content-description
+{
+    width: 90%;
+    height: 90%;
+    opacity: 1;
+}
+.ruta1--content-description p, .ruta2--content-description p, .ruta3--content-description p
+{
+    color: black;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 21px;
+    text-align: justify;
+}
+.ruta1--content-slider, .ruta2--content-slider, .ruta3--content-slider
+{
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 20%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    opacity: 1;
+}
+.ruta1--slider--imgs, .ruta2--slider--imgs, .ruta3--slider--imgs
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+.ruta1--slider--img-1
+{
+    width: 38%;
+    height: 66%;
+    background-image: url("./imgs/rutas/ruta1/ruta1-elsalvador-1.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 1;
+    transition: .5s;
+}
+.ruta2--slider--img-1
+{
+    width: 36%;
+    height: 66%;
+    background-image: url("./imgs/rutas/ruta2/ruta2-elsalvador-1.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 1;
+    transition: .5s;
+}
+.ruta3--slider--img-1
+{
+    width: 36%;
+    height: 66%;
+    background-image: url("./imgs/rutas/ruta3/ruta3-elsalvador-1.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 1;
+    transition: .5s;
+}
+
+.ruta1--slider--img-2
+{
+    width: 36%;
+    height: 66%;
+    background-image: url("./imgs/rutas/ruta1/ruta1-elsalvador-2.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+.ruta2--slider--img-2
+{
+    width: 36%;
+    height: 66%;
+    background-image: url("./imgs/rutas/ruta2/ruta2-elsalvador-2.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+.ruta3--slider--img-2
+{
+    width: 36%;
+    height: 66%;
+    background-image: url("./imgs/rutas/ruta3/ruta3-elsalvador-2.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+
+.ruta1--slider--img-3
+{
+    width: 36%;
+    height: 66%;
+    background-image: url("./imgs/rutas/ruta1/ruta1-elsalvador-3.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+.ruta2--slider--img-3
+{
+    width: 36%;
+    height: 66%;
+    background-image: url("./imgs/rutas/ruta2/ruta2-elsalvador-3.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+.ruta3--slider--img-3
+{
+    width: 36%;
+    height: 66%;
+    background-image: url("./imgs/rutaS/ruta3/ruta3-elsalvador-3.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+
+.ruta1--slider--img-4
+{
+    width: 36%;
+    height: 66%;
+    background-image: url("./imgs/rutas/ruta1/ruta1-elsalvador-4.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+.ruta2--slider--img-4
+{
+    width: 36%;
+    height: 66%;
+    background-image: url("./imgs/rutas/ruta2/ruta2-elsalvador-4.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+.ruta3--slider--img-4
+{
+    width: 36%;
+    height: 66%;
+    background-image: url("./imgs/rutas/ruta3/ruta3-elsalvador-4.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+
+.ruta1--slider--bottons, .ruta2--slider--bottons, .ruta3--slider--bottons
+{
+    width: 100%;
+    height: 100%;
+    /* background-color: brown; */
+    display: grid;
+    grid-template-columns: repeat(4, 5%);
+    grid-template-rows: 25%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+.ruta1--slider--botton-2, .ruta1--slider--botton-3, .ruta1--slider--botton-4,.ruta2--slider--botton-2, .ruta2--slider--botton-3, .ruta2--slider--botton-4,.ruta3--slider--botton-2, .ruta3--slider--botton-3, .ruta3--slider--botton-4
+{
+    width: 60%;
+    height: 60%;
+    background-color:rgb(119, 119, 119);
+    transition: .5s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ruta1--slider--botton-1, .ruta2--slider--botton-1, .ruta3--slider--botton-1
+{
+    width: 60%;
+    height: 60%;
+    background-color:black;
+    transition: .5s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.main--naturaleza, .main--playas
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px auto auto auto;
+    justify-content: center;
+    align-items: flex-end;
+    justify-items: center;
+}
+.main--naturaleza-blackline, .main--playas-blackline
+{
+    width: 60%;
+    height: 3px;
+    background-color: black;
+}
+.main--naturaleza--title, .main--playas--title
+{
+    width: 100%;
+    height: auto;
+}
+.main--naturaleza--title h2, .main--playas--title h2
+{
+    font-family: 'coolveticaregular';
+    letter-spacing: 2px;
+    font-size: 45px;
+    text-align: center;
+    padding-right: 10px;
+}
+.main--naturaleza--title h2 span, .main--playas--title h2 span
+{
+    padding-left: 10px;   
+}
+
+.main--naturaleza-1, .main--naturaleza-2, .main--playas-1, .main--playas-2
+{
+    width: 90%;
+    height: 800px;
+    background-color: #edecec;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 10% 25% 25% 35%;
+    grid-template-columns: 100%;
+    justify-content: center;
+    /* justify-items: center; */
+    align-items: center;
+}
+.naturaleza-1--title h3, .naturaleza-2--title h3, .playas-1--title h3, .playas-2--title h3
+{
+    font-family: 'coolveticaregular';
+    letter-spacing: 2px;
+    font-size: 35px;
+    padding: 20px;
+}
+.naturaleza-1--map, .naturaleza-2--map, .playas-1--map, .playas-2--map
+{
+    width: 90%;
+    height: 100%;
+    border: 1px solid rgb(177, 177, 177);
+    margin: 0px auto;
+}
+.naturaleza-1--Gmap, .playas-1--Gmap
+{
+    width: 100%;
+    height: 100%;
+}
+.naturaleza-1--description, .naturaleza-2--description, .playas-1--description, .playas-2--description
+{
+    width: 90%;
+    height: 100%;
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin: 0 auto;
+    text-align: justify;
+}
+.naturaleza-1--sliders, .naturaleza-2--sliders, .playas-1--sliders, .playas-2--sliders
+{
+    width: 70%;
+    height: 95%;
+    margin: auto auto;
+    border: 1px solid rgb(175, 175, 175);
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.naturaleza-1--slider-1
+{
+    width: 85%;
+    height: 75%;
+    background-image: url("./imgs/naturaleza/naturaleza1-elsalvador1.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    transition: .3s;
+}
+.naturaleza-2--slider-1
+{
+    width: 85%;
+    height: 75%;
+    background-image: url("./imgs/naturaleza/naturaleza2-elsalvador1.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    transition: .3s;
+}
+.playas-1--slider-1
+{
+    width: 85%;
+    height: 75%;
+    background-image: url("./imgs/playas/playas-elsalvador1.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    transition: .3s;
+}
+.playas-2--slider-1
+{
+    width: 85%;
+    height: 75%;
+    background-image: url("./imgs/playas/playas2-elsalvador1.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+
+.naturaleza-1--slider-2
+{
+    width: 85%;
+    height: 75%;
+    background-image: url("./imgs/naturaleza/naturaleza1-elsalvador2.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    transition: .3s;
+}
+.naturaleza-2--slider-2
+{
+    width: 85%;
+    height: 75%;
+    background-image: url("./imgs/naturaleza/naturaleza2-elsalvador2.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    transition: .3s;
+}
+.playas-1--slider-2
+{
+    width: 85%;
+    height: 75%;
+    background-image: url("./imgs/playas/playas-elsalvador2.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    transition: .3s;
+}
+.playas-2--slider-2
+{
+    width: 85%;
+    height: 75%;
+    background-image: url("./imgs/playas/playas2-elsalvador2.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+
+.naturaleza-1--slider-3
+{
+    width: 85%;
+    height: 75%;
+    background-image: url("./imgs/naturaleza/naturaleza1-elsalvador3.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    transition: .3s;
+}
+.naturaleza-2--slider-3
+{
+    width: 85%;
+    height: 75%;
+    background-image: url("./imgs/naturaleza/naturaleza2-elsalvador3.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    transition: .3s;
+}
+.playas-1--slider-3
+{
+    width: 85%;
+    height: 75%;
+    background-image: url("./imgs/playas/playas-elsalvador3.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    transition: .3s;
+}
+.playas-2--slider-3
+{
+    width: 85%;
+    height: 75%;
+    background-image: url("./imgs/playas/playas2-elsalvador3.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+
+.naturaleza-1--slider-1-back, .naturaleza-1--slider-2-back, .naturaleza-1--slider-3-back
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .3s;
+}
+.naturaleza-2--slider-1-back, .naturaleza-2--slider-2-back, .naturaleza-2--slider-3-back
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .3s;
+}
+.playas-1--slider-1-back, .playas-1--slider-2-back, .playas-1--slider-3-back
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .3s;
+}
+.playas-2--slider-1-back, .playas-2--slider-2-back, .playas-2--slider-3-back
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .3s;
+}
+
+    .naturaleza-1--slider-1-back:hover, .naturaleza-1--slider-2-back:hover, .naturaleza-1--slider-3-back:hover
+    {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .naturaleza-1--slider-1:hover, .naturaleza-1--slider-2:hover, .naturaleza-1--slider-3:hover
+    {
+        transform: scale(1.1);
+    }
+    .naturaleza-2--slider-1-back:hover, .naturaleza-2--slider-2-back:hover, .naturaleza-2--slider-3-back:hover
+    {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .naturaleza-2--slider-1:hover, .naturaleza-2--slider-2:hover, .naturaleza-2--slider-3:hover
+    {
+        transform: scale(1.1);
+    }
+
+    .playas-1--slider-1-back:hover, .playas-1--slider-2-back:hover,  .playas-1--slider-3-back:hover
+    {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .playas-1--slider-1:hover, .playas-1--slider-2:hover, .playas-1--slider-3:hover
+    {
+        transform: scale(1.1);
+    }
+    .playas-2--slider-1-back:hover, .playas-2--slider-2-back:hover,  .playas-2--slider-3-back:hover
+    {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .playas-2--slider-1:hover, .playas-2--slider-2:hover, .playas-2--slider-3:hover
+    {
+        transform: scale(1.1);
+    }
+
+
+    .footer
+    {
+        width: 100%;
+        height: 150px;
+        background-color: rgb(0, 0, 141);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    .footer--social
+    {
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+        color: white;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: repeat(3, 5%);
+        grid-template-rows: 100%;
+    }
+    .footer--social a
+    {
+        text-decoration: none;
+        color: white;
+    }
+    .footer--terminos
+    {
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-family: 'Roboto';
+        font-weight: 100;
+    }
+
+
+    @media screen and (max-width:1300px) 
+    {
+        .header--nav-inicio
+        .ruta1--content-description p, .ruta2--content-description p, .ruta3--content-description p 
+        {
+            font-size: 18px;
+        }  
+        .main--ruta1, .main--ruta2, .main--ruta3
+        {
+            grid-template-columns: 90%;
+        }
+    }
+
+    @media screen and (max-width:936px) 
+    {
+        .ruta1--slider--img-1, .ruta1--slider--img-2, .ruta1--slider--img-3, .ruta1--slider--img-4
+        {
+            width: 43%;
+        }
+        .ruta2--slider--img-1, .ruta2--slider--img-2, .ruta2--slider--img-3, .ruta2--slider--img-4
+        {
+            width: 43%;
+        }
+        .ruta3--slider--img-1, .ruta3--slider--img-2, .ruta1--slider--img-3, .ruta3--slider--img-4
+        {
+            width: 43%;
+        }
+        
+        .ruta1--slider--botton-1, .ruta2--slider--botton-1, .ruta3--slider--botton-1 
+        {
+            height: 48%;
+        }
+        .ruta1--slider--botton-2, .ruta2--slider--botton-2, .ruta3--slider--botton-2 
+        {
+            height: 48%;
+        }
+        .ruta1--slider--botton-3, .ruta2--slider--botton-3, .ruta3--slider--botton-3 
+        {
+            height: 48%;
+        }
+        .ruta1--slider--botton-4, .ruta2--slider--botton-4, .ruta3--slider--botton-4 
+        {
+            height: 48%;
+        }
+
+        .ruta1--content-description p, .ruta2--content-description p, .ruta3--content-description p 
+        {
+            font-size: 16px;
+        }  
+        
+        .main--banner-description p
+        {
+            font-size: 20px;
+        }
+        .main--banner-title h1
+        {
+            font-size: 50px;
+        }
+
+        .main--naturaleza-1, .main--naturaleza-2, .main--playas-1, .main--playas-2
+        {
+            height: 1100px;
+        }
+        .naturaleza-1--sliders, .naturaleza-2--sliders, .playas-1--sliders, .playas-2--sliders
+        {
+            width: 85%;
+        }
+
+    }
+
+    @media screen and (max-width:862px) 
+    {
+        .header--nav
+        {
+            display: none;
+        }
+        .header
+        {
+            height: 55px;
+            grid-template-columns: 90% 10%;
+            grid-template-rows: 100%;
+            justify-items: center;
+        }
+        .burgerBotton-container2
+        {
+            display: grid;
+            box-sizing: border-box;
+        }
+        .burgerBotton-container
+        {
+            display: none;
+        }
+        .menu--despegable
+        {
+            width: 70%;
+        }
+        .header--title div
+        {
+            font-size: 35px;
+            text-align: center;
+        }
+        .header--title
+        {
+            grid-template-columns: 80% 20%;
+        }
+        .header--title img
+        {
+            width: 40px;
+            justify-self: right;
+        }
+        .main--banner-description
+        {
+            border-left: none;
+        }
+        .main--banner-description p
+        {
+            text-align: justify;
+        }
+        .main--banner-back
+        {
+            grid-template-columns: 90%;
+            grid-template-rows: 30% 60%;
+        }
+        .main--banner-title h1
+        {
+            font-size: 45px;
+            text-align: center;
+            margin-top: 0%;
+        }
+        .main--banner
+        {
+            height: 440px;
+        }
+        .main--naturaleza-1, .main--naturaleza-2, .main--playas-1, .main--playas-2
+        {
+            grid-template-rows: 10% 20% 30% 35%;
+        }
+        .footer--social
+        {
+            grid-template-columns: repeat(3, 15%);
+        }
+    }
+    @media screen and (max-width:480px)
+    {
+        
+        
+        .header--title div
+        {
+            font-size: 25px;
+            text-align: center;
+            margin-left: 10px;
+        }
+        .header--title img
+        {
+            width: 30px;
+            justify-self: left;
+        }
+        .main--banner-back
+        {
+            grid-template-columns: 90%;
+            grid-template-rows: 10% 60%;
+        }
+        .main--banner-description p
+        {
+            font-size: 16px;
+            font-family: 'Roboto';
+            padding-left: 0;
+        }
+        .main--banner-title h1
+        {
+            padding-right: 0;
+        }
+        .main--rutas-title h2
+        {
+            font-size: 35px;
+ 
+        }
+        .main--ruta1--back h3, .main--ruta2--back h3, .main--ruta3--back h3
+        {
+            font-size: 23px;
+        }
+        .main--ruta1--content, .main--ruta2--content, .main--ruta3--content
+        {
+            grid-template-columns: 95%;
+            grid-template-rows: auto 40%;
+        }
+        .ruta1--slider--img-1, .ruta1--slider--img-2, .ruta1--slider--img-3, .ruta1--slider--img-4
+        {
+            width: 80%;
+            height: 300px;
+        }
+        .ruta2--slider--img-1, .ruta2--slider--img-2, .ruta2--slider--img-3, .ruta2--slider--img-4
+        {
+            width: 80%;
+            height: 300px;
+        }
+        .ruta3--slider--img-1, .ruta3--slider--img-2, .ruta3--slider--img-3, .ruta3--slider--img-4
+        {
+            width: 80%;
+            height: 300px;
+        }
+
+        .main--naturaleza--title h2, .main--playas--title h2
+        {
+            font-size: 32px;
+        }
+        
+        .naturaleza-1--title h3, .naturaleza-2--title h3, .playas-1--title h3, .playas-2--title h3
+        {
+            font-size: 28px;
+        }
+        .naturaleza-1--description, .naturaleza-2--description, .playas-1--description, .playas-2--description
+        {
+            font-size: 16px;
+        }
+        .naturaleza-1--sliders, .naturaleza-2--sliders, .playas-1--sliders, .playas-2--sliders
+        {
+            grid-template-columns: 99%;
+            grid-template-rows: 33% 33% 33%;
+            justify-items: center;
+        }
+        .main--naturaleza-1, .main--naturaleza-2, .main--playas-1, .main--playas-2
+        {
+            height: 1500px;
+            grid-template-rows: 10% 15% 25% 50%;
+        }
+        .naturaleza-1--sliders, .naturaleza-2--sliders, .playas-1--sliders, .playas-2--sliders
+        {
+            width: 95%;
+            height: 95%;
+            align-content: center;
+        }
+        @keyframes comprimir
+        {
+            0%
+            {   
+                height: 0;
+            }
+            50%
+            {
+                
+            }
+            100%
+            {
+                height: 950px;
+            }
+        }
+        .main--ruta1--content, .main--ruta2--content, .main--ruta3--content
+        {
+            height: 950px;
+        }
+    }
