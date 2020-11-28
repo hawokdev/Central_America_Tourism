@@ -253,11 +253,13 @@ function ruta3slide4()
 }
 
 var botonOpenMenu = document.getElementById('despegable--button-open');
+var botonOpenMenu2 = document.getElementById('despegable--button-open2');
 var botonCloseMenu = document.getElementById('despegable--button-close');
 var menuDespegable = document.getElementById('menu-despegable');
 
 botonOpenMenu.addEventListener("click", abrirMenuDespegable);
 botonCloseMenu.addEventListener("click", abrirMenuDespegable);
+botonOpenMenu2.addEventListener("click", abrirMenuDespegable)
 contador = 0;
 function abrirMenuDespegable()
 {
@@ -268,7 +270,7 @@ function abrirMenuDespegable()
     }
     else if(contador==1)
     {
-        menuDespegable.style.right = "-25%";
+        menuDespegable.style.right = "-100%";
         contador = 0;
     }
 }

@@ -71,7 +71,7 @@ body
     width: 100%;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 8% 8% 8% 8%;
+    grid-template-rows: 8% 8% 12% 5% 5% 5% 5% 5% 5% 5%;
     text-align: right;
     align-items: center;
     font-size: 18px;
@@ -92,6 +92,25 @@ body
     background-color: #e2dddd;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+}
+.nav--despegable-guatemala:hover,.nav--despegable-costarica:hover, .nav--despegable-belice:hover, .nav--despegable-elsalvador:hover, .nav--despegable-honduras:hover, .nav--despegable-nicaragua:hover, .nav--despegable-panama:hover
+{
+    background-color: #e2dddd;
+    transition: .2s;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    text-align: center;
+}
+.nav--despegable-guatemala,.nav--despegable-costarica, .nav--despegable-belice, .nav--despegable-elsalvador, .nav--despegable-honduras, .nav--despegable-nicaragua, .nav--despegable-panama
+{
+    margin-right: 10%;
+}
+
+.nav--despegable-pais
+{
+    background-color: #e2dddd;
+    margin-right: 20px;
+    text-align: center;
 }
 .nav--despegable-inicio, .nav--despegable-rutas, .nav--despegable-naturaleza, .nav--despegable-playas
 {
@@ -320,7 +339,7 @@ body
 .header--nav
 {
     display: grid;
-    grid-template-columns: 12% 12% 12% 12%;
+    grid-template-columns: 15% 15% 15%;
     grid-template-rows: 100%;
     /* column-gap: 70px; */
     justify-content: center;
